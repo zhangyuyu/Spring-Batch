@@ -1,0 +1,14 @@
+mysql.server start
+mysql -u root -p
+show databases;
+use test;
+show tables;
+select * from raw_report;
+drop table raw_report;
+
+create table raw_report(
+       name varchar(20),
+       sex varchar(1),
+       age varchar(3),
+       birthday varchar(20)
+  );

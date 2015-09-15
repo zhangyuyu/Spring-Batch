@@ -1,0 +1,35 @@
+apply plugin: 'application'
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+mainClassName = 'com.mkyong.App'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+/*
+distributions {
+    main {
+        contents{
+            from{libsDir}
+        }
+    }
+}*/
+
+dependencies {
+    compile 'org.springframework:spring-core:3.2.2.RELEASE'
+    compile 'org.springframework:spring-oxm:3.2.2.RELEASE'
+    compile 'org.springframework.batch:spring-batch-core:2.2.0.RELEASE'
+    compile 'org.springframework.batch:spring-batch-infrastructure:2.2.0.RELEASE'
+//    compile 'org.apache.maven.plugins:maven-compiler-plugin:2.3.2'
+    compile 'org.springframework:spring-jdbc:3.2.2.RELEASE'
+    compile 'mysql:mysql-connector-java:5.1.25'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.6'
+}

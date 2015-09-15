@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: plexus:plexus-utils:1.0.2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

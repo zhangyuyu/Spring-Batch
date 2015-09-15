@@ -1,0 +1,19 @@
+mysql.server start
+mysql -u root -p
+show databases;
+use test;
+show tables;
+
+drop table raw_report;
+
+create table raw_report(
+           NAME varchar(20),
+           SEX varchar(10),
+           AGE varchar(10),
+           BIRTHDAY varchar(20));
+
+SELECT * from raw_report;
+
+INSERT INTO raw_report (name,sex,age,birthday) values ("zhang","F",21,"1/7/1994");
+DELETE FROM raw_report WHERE AGE = '21';
+
